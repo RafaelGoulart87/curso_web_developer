@@ -1,0 +1,6 @@
+== // igual
+>= // maior e igual
+<= // menor e igual
+!== // estritamente diferente
+!= // diferente 
+=== // estritamente igual
