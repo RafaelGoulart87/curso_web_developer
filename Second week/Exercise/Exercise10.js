@@ -14,7 +14,7 @@ Exemplo de Saída:
 6
 */
 
-let number = 10
+let number = 3
 let result = 0
 
 for (i = 1; i <= number; i++) {

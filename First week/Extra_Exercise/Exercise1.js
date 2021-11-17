@@ -3,31 +3,34 @@
 a soma dos dois maiores.
 */
 
-let numberOne = 7
-let numberTwo = 4
-let numberThre = 8
-let maior = ""
-let maior1 = ""
-let medium = ""
+let numberOne = 3
+let numberTwo = 2
+let numberThre = 3
+let maior = 0
+let menor = 0
+let medium = 0
 
 
 if (numberOne > numberTwo && numberOne > numberThre) {
     maior = numberOne
-}
-if (numberTwo > numberThre && numberTwo > numberOne) {
+} else if (numberTwo > numberThre && numberTwo > numberOne) {
     maior = numberTwo
-}
-if (numberThre > numberOne && numberThre > numberTwo) {
+} else if (numberThre > numberOne && numberThre > numberTwo) {
     maior = numberThre
 }
-// if (numberOne > numberTwo && numberOne > numberThre) {
-//     maior1 = numberOne
-// }
-// if (numberTwo > numberThre && numberTwo > numberOne) {
-//     maior1 = numberTwo
-// }
-// if (numberThre > numberOne && numberThre > numberTwo) {
-//     maior1 = numberThre
-// }
+if (numberOne < numberTwo && numberOne < numberThre) {
+    menor = numberOne
+} else if (numberTwo < numberThre && numberTwo < numberOne) {
+    menor = numberTwo
+} else if (numberThre < numberOne && numberThre < numberTwo) {
+    menor = numberThre
+}
+if (numberOne < maior && numberOne > menor) {
+    medium = numberOne
+} else if (numberTwo < maior && numberTwo > menor) {
+    medium = numberTwo
+} else if (numberThre < maior && numberThre > menor) {
+    medium = numberThre
+}
 
-console.log(maior)
+console.log(maior + medium)

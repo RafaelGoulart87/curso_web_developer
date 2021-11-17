@@ -13,3 +13,24 @@ Exemplo de Saída:
 21 22 23 PUM
 25 26 27 PUM
 */
+
+
+let number = 7
+let count = ""
+
+
+
+for (let i = 1; i <= number; i++) {
+    let result = ""
+
+    for (let a = 0; a < 4; a++) {
+        count++
+        if (a === 3) {
+            result += "PUM"
+        } else {
+            result += count + " "
+        }
+
+    }
+    console.log(result)
+}

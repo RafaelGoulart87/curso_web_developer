@@ -7,9 +7,8 @@ Exemplo de Saída:
 [10, 80, 60, 130, 70, 90, 150, 220, 3560, 40, 30]
 */
 let array = [1, 8, 6, 13, 7, 9, 15, 22, 356, 4, 3]
-let result = 0
 
 for (i = 0; i < array.length; i++) {
-    array[i] = array[i] * 10
+    array[i] *= 10
 }
 console.log(array)

@@ -14,10 +14,8 @@ let nameList = ['Angela', 'Rosa', 'Ticiana', 'Carla', 'Renata']
 let result = ""
 
 
-for (i = 0; i < nameList.length; i++) {
+for (let i = 0; i < nameList.length; i++) {
     let teste = nameList[i]
-
-
 
     if (i === nameList.length - 1) {
         result = result + teste
