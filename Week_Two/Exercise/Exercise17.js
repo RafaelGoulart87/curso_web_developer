@@ -16,14 +16,18 @@ Saída esperada:
 const propertyUser = user => {
 
     for (i = 0; i < user.length; i++) {
-        job = user[i].job
-
-        if (job === 'Dev') {
-            return user.name
-
+        if (user[i].job === 'Dev') {
+            console.log(user[i].name + " é Dev.")
+        } else {
+            console.log(user[i].name + " não é Dev.")
         }
+
     }
-
-    pro[{ name: 'Marília', age: 26, job: 'Dev' }, { name: 'Juca', age: 21, job: 'RH' }, { name: 'Flávia', age: 30, job: 'Financeiro' }, { name: 'Sérgio', age: 24, job: 'Dev' }, ]
-
 }
+
+propertyUser([
+    { name: 'Marília', age: 26, job: 'Dev' },
+    { name: 'Juca', age: 21, job: 'RH' },
+    { name: 'Flávia', age: 30, job: 'Financeiro' },
+    { name: 'Sérgio', age: 24, job: 'Dev' },
+])
